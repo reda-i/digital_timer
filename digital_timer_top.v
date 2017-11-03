@@ -9,10 +9,10 @@
 * a third segment display to make sure that
 * the hundereds never exceed 0
 */
-module digital_timer_top (seg_0,seg_1,seg_2,clk_50MHz,reset);
+module digital_timer_top (seg_0,seg_1,clk_50MHz,reset);
 input clk_50MHz;
 input reset;
-output [7:0] seg_0, seg_1, seg_2;
+output [7:0] seg_0, seg_1;
 wire clk_2MHz;
 wire [7:0] count;
 wire [3:0] ones, tens, hundreds;
@@ -21,5 +21,4 @@ counter_99 digital_counter(count,clk_2MHz,reset);
 binary_to_BCD bcd_encoder(count,hundreds,tens,ones);
 segment_display HEX_0 (seg_0, ones);
 segment_display HEX_1 (seg_1, tens);
-segment_display HEX_2 (seg_2, hundreds);
 endmodule

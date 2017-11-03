@@ -6,7 +6,7 @@ output reg [7:0] count;
 initial
    begin
       //start counter with 0;
-      count <= count <= 8'b00_00_00_00;
+      count <= 8'b00_00_00_00;
    end
 always @ (posedge clk, negedge reset)
    begin
@@ -18,7 +18,7 @@ always @ (posedge clk, negedge reset)
       else
          begin
             //if counter is not 99 increment else reset
-            if(count != 99)
+            if(count != 8'd99)
                begin
                   count <= count + 1;
                end
