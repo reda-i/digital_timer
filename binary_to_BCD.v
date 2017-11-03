@@ -20,7 +20,7 @@ always @ (binary)
       hundreds = 4'b0000;
       tens = 4'b0000;
       ones = 4'b0000;
-      for(i = 0; i < 8; i = i + 1)
+      for(i = 7; i >= 0; i = i - 1)
          begin
          //in case the one of the outputs is >= 5 add 3
             if(hundreds >= 5)
