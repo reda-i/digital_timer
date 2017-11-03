@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seg_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50MHz",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

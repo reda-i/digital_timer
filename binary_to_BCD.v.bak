@@ -1,0 +1,6 @@
+module binary_to_BCD (binary, tens, ones);
+input [7:0] binary;
+output reg [3:0] tens;
+output reg [3:0] ones;
+
+endmodule

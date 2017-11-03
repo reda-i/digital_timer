@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -6.014
+TNS   : -33.740
+
+Type  : Slow 1200mV 85C Model Setup 'counter_99:digital_counter|count[1]'
+Slack : -4.685
+TNS   : -31.309
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50MHz'
+Slack : -4.053
+TNS   : -52.710
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50MHz'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_generator:clk_2_50|clk_2MHz'
+Slack : 0.684
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'counter_99:digital_counter|count[1]'
+Slack : 1.022
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter_99:digital_counter|count[1]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -5.349
+TNS   : -29.819
+
+Type  : Slow 1200mV 0C Model Setup 'counter_99:digital_counter|count[1]'
+Slack : -4.406
+TNS   : -29.528
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50MHz'
+Slack : -3.646
+TNS   : -45.506
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50MHz'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_generator:clk_2_50|clk_2MHz'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'counter_99:digital_counter|count[1]'
+Slack : 0.932
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -1.403
+TNS   : -11.224
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter_99:digital_counter|count[1]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -2.635
+TNS   : -14.749
+
+Type  : Fast 1200mV 0C Model Setup 'counter_99:digital_counter|count[1]'
+Slack : -1.480
+TNS   : -9.729
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50MHz'
+Slack : -1.214
+TNS   : -9.055
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50MHz'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'counter_99:digital_counter|count[1]'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_generator:clk_2_50|clk_2MHz'
+Slack : 0.269
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -33.420
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_generator:clk_2_50|clk_2MHz'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter_99:digital_counter|count[1]'
+Slack : 0.319
+TNS   : 0.000
+
+------------------------------------------------------------
