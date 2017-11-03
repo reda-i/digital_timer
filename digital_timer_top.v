@@ -12,7 +12,7 @@
 module digital_timer_top (seg_0,seg_1,seg_2,clk_50MHz,reset);
 input clk_50MHz;
 input reset;
-output reg [3:0] seg_0, seg_1, seg_2;
+output reg [7:0] seg_0, seg_1, seg_2;
 wire clk_2MHz;
 wire [7:0] count;
 wire [3:0] ones, tens, hundreds;
