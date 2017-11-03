@@ -7,7 +7,7 @@ initial
    begin
       //start counter with 0;
       count <= count <= 8'b00_00_00_00;
-   end; 
+   end
 always @ (posedge clk, negedge reset)
    begin
       if(~reset)
