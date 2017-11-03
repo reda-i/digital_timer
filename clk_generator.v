@@ -1,4 +1,4 @@
-module clk_generator (clk_50MHz, clk_2MHz);
+module clk_generator (clk_2MHz, clk_50MHz);
 input clk_50MHz;
 reg [24:0] counter;
 output reg clk_2MHz;
