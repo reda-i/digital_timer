@@ -18,7 +18,7 @@ always @ (posedge clk, negedge reset)
       else
          begin
             //if counter is not 99 increment else reset
-            if(counter != 99)
+            if(count != 99)
                begin
                   count <= count + 1;
                end

@@ -41,8 +41,4 @@ always @ (binary)
             ones[0] = binary [i];
          end
    end
-endmodule 
-               
-               
-
 endmodule
