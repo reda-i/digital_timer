@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
 
-// DATE "11/03/2017 19:21:11"
+// DATE "11/04/2017 10:40:26"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -162,10 +162,10 @@ wire \clk_2_50|Equal0~3_combout ;
 wire \clk_2_50|Equal0~2_combout ;
 wire \clk_2_50|Equal0~4_combout ;
 wire \clk_2_50|Equal0~7_combout ;
-wire \clk_2_50|clk_2MHz~0_combout ;
-wire \clk_2_50|clk_2MHz~feeder_combout ;
-wire \clk_2_50|clk_2MHz~q ;
-wire \clk_2_50|clk_2MHz~clkctrl_outclk ;
+wire \clk_2_50|clk_2Hz~0_combout ;
+wire \clk_2_50|clk_2Hz~feeder_combout ;
+wire \clk_2_50|clk_2Hz~q ;
+wire \clk_2_50|clk_2Hz~clkctrl_outclk ;
 wire \digital_counter|Add0~0_combout ;
 wire \reset~input_o ;
 wire \digital_counter|Add0~1 ;
@@ -1750,43 +1750,43 @@ defparam \clk_2_50|Equal0~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X64_Y49_N30
-fiftyfivenm_lcell_comb \clk_2_50|clk_2MHz~0 (
+fiftyfivenm_lcell_comb \clk_2_50|clk_2Hz~0 (
 // Equation(s):
-// \clk_2_50|clk_2MHz~0_combout  = \clk_2_50|clk_2MHz~q  $ (\clk_2_50|Equal0~7_combout )
+// \clk_2_50|clk_2Hz~0_combout  = \clk_2_50|clk_2Hz~q  $ (\clk_2_50|Equal0~7_combout )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\clk_2_50|clk_2MHz~q ),
+	.datac(\clk_2_50|clk_2Hz~q ),
 	.datad(\clk_2_50|Equal0~7_combout ),
 	.cin(gnd),
-	.combout(\clk_2_50|clk_2MHz~0_combout ),
+	.combout(\clk_2_50|clk_2Hz~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clk_2_50|clk_2MHz~0 .lut_mask = 16'h0FF0;
-defparam \clk_2_50|clk_2MHz~0 .sum_lutc_input = "datac";
+defparam \clk_2_50|clk_2Hz~0 .lut_mask = 16'h0FF0;
+defparam \clk_2_50|clk_2Hz~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X64_Y49_N0
-fiftyfivenm_lcell_comb \clk_2_50|clk_2MHz~feeder (
+fiftyfivenm_lcell_comb \clk_2_50|clk_2Hz~feeder (
 // Equation(s):
-// \clk_2_50|clk_2MHz~feeder_combout  = \clk_2_50|clk_2MHz~0_combout 
+// \clk_2_50|clk_2Hz~feeder_combout  = \clk_2_50|clk_2Hz~0_combout 
 
 	.dataa(gnd),
-	.datab(\clk_2_50|clk_2MHz~0_combout ),
+	.datab(\clk_2_50|clk_2Hz~0_combout ),
 	.datac(gnd),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\clk_2_50|clk_2MHz~feeder_combout ),
+	.combout(\clk_2_50|clk_2Hz~feeder_combout ),
 	.cout());
 // synopsys translate_off
-defparam \clk_2_50|clk_2MHz~feeder .lut_mask = 16'hCCCC;
-defparam \clk_2_50|clk_2MHz~feeder .sum_lutc_input = "datac";
+defparam \clk_2_50|clk_2Hz~feeder .lut_mask = 16'hCCCC;
+defparam \clk_2_50|clk_2Hz~feeder .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X64_Y49_N1
-dffeas \clk_2_50|clk_2MHz (
+dffeas \clk_2_50|clk_2Hz (
 	.clk(\clk_50MHz~inputclkctrl_outclk ),
-	.d(\clk_2_50|clk_2MHz~feeder_combout ),
+	.d(\clk_2_50|clk_2Hz~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -1795,24 +1795,24 @@ dffeas \clk_2_50|clk_2MHz (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\clk_2_50|clk_2MHz~q ),
+	.q(\clk_2_50|clk_2Hz~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \clk_2_50|clk_2MHz .is_wysiwyg = "true";
-defparam \clk_2_50|clk_2MHz .power_up = "low";
+defparam \clk_2_50|clk_2Hz .is_wysiwyg = "true";
+defparam \clk_2_50|clk_2Hz .power_up = "low";
 // synopsys translate_on
 
 // Location: CLKCTRL_G13
-fiftyfivenm_clkctrl \clk_2_50|clk_2MHz~clkctrl (
+fiftyfivenm_clkctrl \clk_2_50|clk_2Hz~clkctrl (
 	.ena(vcc),
-	.inclk({vcc,vcc,vcc,\clk_2_50|clk_2MHz~q }),
+	.inclk({vcc,vcc,vcc,\clk_2_50|clk_2Hz~q }),
 	.clkselect(2'b00),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.outclk(\clk_2_50|clk_2MHz~clkctrl_outclk ));
+	.outclk(\clk_2_50|clk_2Hz~clkctrl_outclk ));
 // synopsys translate_off
-defparam \clk_2_50|clk_2MHz~clkctrl .clock_type = "global clock";
-defparam \clk_2_50|clk_2MHz~clkctrl .ena_register_mode = "none";
+defparam \clk_2_50|clk_2Hz~clkctrl .clock_type = "global clock";
+defparam \clk_2_50|clk_2Hz~clkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y50_N0
@@ -1847,7 +1847,7 @@ defparam \reset~input .simulate_z_as = "z";
 
 // Location: FF_X65_Y50_N1
 dffeas \digital_counter|count[0] (
-	.clk(\clk_2_50|clk_2MHz~clkctrl_outclk ),
+	.clk(\clk_2_50|clk_2Hz~clkctrl_outclk ),
 	.d(\digital_counter|Add0~0_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -1884,7 +1884,7 @@ defparam \digital_counter|Add0~2 .sum_lutc_input = "cin";
 
 // Location: FF_X65_Y50_N3
 dffeas \digital_counter|count[1] (
-	.clk(\clk_2_50|clk_2MHz~clkctrl_outclk ),
+	.clk(\clk_2_50|clk_2Hz~clkctrl_outclk ),
 	.d(\digital_counter|Add0~2_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -1957,7 +1957,7 @@ defparam \digital_counter|Add0~8 .sum_lutc_input = "cin";
 
 // Location: FF_X65_Y50_N9
 dffeas \digital_counter|count[4] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|Add0~8_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -2011,7 +2011,7 @@ defparam \digital_counter|count~1 .sum_lutc_input = "datac";
 
 // Location: FF_X64_Y50_N3
 dffeas \digital_counter|count[5] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|count~1_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -2064,7 +2064,7 @@ defparam \digital_counter|count~2 .sum_lutc_input = "datac";
 
 // Location: FF_X65_Y50_N19
 dffeas \digital_counter|count[2] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|count~2_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -2083,7 +2083,7 @@ defparam \digital_counter|count[2] .power_up = "low";
 
 // Location: FF_X65_Y50_N7
 dffeas \digital_counter|count[3] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|Add0~6_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -2154,7 +2154,7 @@ defparam \digital_counter|count~0 .sum_lutc_input = "datac";
 
 // Location: FF_X64_Y50_N1
 dffeas \digital_counter|count[6] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|count~0_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),
@@ -2190,7 +2190,7 @@ defparam \digital_counter|Add0~14 .sum_lutc_input = "cin";
 
 // Location: FF_X65_Y50_N15
 dffeas \digital_counter|count[7] (
-	.clk(\clk_2_50|clk_2MHz~q ),
+	.clk(\clk_2_50|clk_2Hz~q ),
 	.d(\digital_counter|Add0~14_combout ),
 	.asdata(vcc),
 	.clrn(\reset~input_o ),

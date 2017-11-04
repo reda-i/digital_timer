@@ -1,5 +1,5 @@
 Analysis & Synthesis report for digital_timer_top
-Fri Nov 03 19:20:21 2017
+Sat Nov 04 10:39:32 2017
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 03 19:20:21 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 04 10:39:31 2017       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; digital_timer_top                           ;
 ; Top-level Entity Name              ; digital_timer_top                           ;
@@ -315,7 +315,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Fri Nov 03 19:20:03 2017
+    Info: Processing started: Sat Nov 04 10:39:14 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off digital_timer -c digital_timer_top
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file digital_timer_top.v
@@ -393,9 +393,9 @@ Info (21057): Implemented 126 device resources after synthesis - the final resou
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 108 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 832 megabytes
-    Info: Processing ended: Fri Nov 03 19:20:21 2017
+    Info: Peak virtual memory: 813 megabytes
+    Info: Processing ended: Sat Nov 04 10:39:32 2017
     Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Total CPU time (on all processors): 00:00:37
 
 

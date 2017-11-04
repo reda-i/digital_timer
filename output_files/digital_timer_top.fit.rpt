@@ -1,5 +1,5 @@
 Fitter report for digital_timer_top
-Fri Nov 03 19:20:42 2017
+Sat Nov 04 10:39:53 2017
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 03 19:20:42 2017       ;
+; Fitter Status                      ; Successful - Sat Nov 04 10:39:53 2017       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; digital_timer_top                           ;
 ; Top-level Entity Name              ; digital_timer_top                           ;
@@ -992,28 +992,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                              ;
-+---------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                            ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk_50MHz                       ; PIN_P11            ; 26      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; clk_generator:clk_2_50|clk_2MHz ; FF_X64_Y49_N1      ; 8       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; clk_generator:clk_2_50|clk_2MHz ; FF_X64_Y49_N1      ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; reset                           ; PIN_B8             ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; segment_display:HEX_0|Mux7~0    ; LCCOMB_X65_Y50_N20 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-+---------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                             ;
++--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                           ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk_50MHz                      ; PIN_P11            ; 26      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; clk_generator:clk_2_50|clk_2Hz ; FF_X64_Y49_N1      ; 8       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; clk_generator:clk_2_50|clk_2Hz ; FF_X64_Y49_N1      ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; reset                          ; PIN_B8             ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; segment_display:HEX_0|Mux7~0   ; LCCOMB_X65_Y50_N20 ; 7       ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
++--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                 ;
-+---------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                            ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk_50MHz                       ; PIN_P11            ; 26      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; clk_generator:clk_2_50|clk_2MHz ; FF_X64_Y49_N1      ; 2       ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
-; segment_display:HEX_0|Mux7~0    ; LCCOMB_X65_Y50_N20 ; 7       ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-+---------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                           ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clk_50MHz                      ; PIN_P11            ; 26      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; clk_generator:clk_2_50|clk_2Hz ; FF_X64_Y49_N1      ; 2       ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
+; segment_display:HEX_0|Mux7~0   ; LCCOMB_X65_Y50_N20 ; 7       ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
++--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------+
@@ -1278,15 +1278,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                             ;
-+---------------------------------+-------------------------------------+-------------------+
-; Source Clock(s)                 ; Destination Clock(s)                ; Delay Added in ns ;
-+---------------------------------+-------------------------------------+-------------------+
-; clk_generator:clk_2_50|clk_2MHz ; counter_99:digital_counter|count[1] ; 36.7              ;
-; clk_generator:clk_2_50|clk_2MHz ; clk_generator:clk_2_50|clk_2MHz     ; 7.3               ;
-; clk_50MHz                       ; clk_50MHz                           ; 4.4               ;
-+---------------------------------+-------------------------------------+-------------------+
++------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                            ;
++--------------------------------+-------------------------------------+-------------------+
+; Source Clock(s)                ; Destination Clock(s)                ; Delay Added in ns ;
++--------------------------------+-------------------------------------+-------------------+
+; clk_generator:clk_2_50|clk_2Hz ; counter_99:digital_counter|count[1] ; 36.7              ;
+; clk_generator:clk_2_50|clk_2Hz ; clk_generator:clk_2_50|clk_2Hz      ; 7.3               ;
+; clk_50MHz                      ; clk_50MHz                           ; 4.4               ;
++--------------------------------+-------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
@@ -1297,38 +1297,38 @@ This will disable optimization of problematic paths and expose them for further 
 ; Source Register                     ; Destination Register                  ; Delay Added in ns ;
 +-------------------------------------+---------------------------------------+-------------------+
 ; counter_99:digital_counter|count[1] ; counter_99:digital_counter|count[6]   ; 5.078             ;
-; clk_generator:clk_2_50|clk_2MHz     ; clk_generator:clk_2_50|clk_2MHz       ; 4.369             ;
+; clk_generator:clk_2_50|clk_2Hz      ; clk_generator:clk_2_50|clk_2Hz        ; 4.369             ;
 ; counter_99:digital_counter|count[6] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
 ; counter_99:digital_counter|count[5] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
 ; counter_99:digital_counter|count[7] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
 ; counter_99:digital_counter|count[3] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
 ; counter_99:digital_counter|count[4] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
 ; counter_99:digital_counter|count[2] ; segment_display:HEX_0|segment_code[1] ; 2.392             ;
-; clk_generator:clk_2_50|counter[23]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[22]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[21]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[20]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[19]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[18]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[17]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[16]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[15]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[14]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[13]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[12]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[11]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[10]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[9]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[8]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[7]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[6]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[5]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[4]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[3]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[2]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[1]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[0]   ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
-; clk_generator:clk_2_50|counter[24]  ; clk_generator:clk_2_50|clk_2MHz       ; 1.563             ;
+; clk_generator:clk_2_50|counter[23]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[22]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[21]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[20]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[19]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[18]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[17]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[16]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[15]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[14]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[13]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[12]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[11]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[10]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[9]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[8]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[7]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[6]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[5]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[4]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[3]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[2]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[1]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[0]   ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
+; clk_generator:clk_2_50|counter[24]  ; clk_generator:clk_2_50|clk_2Hz        ; 1.563             ;
 ; counter_99:digital_counter|count[0] ; segment_display:HEX_0|segment_code[6] ; 1.012             ;
 +-------------------------------------+---------------------------------------+-------------------+
 Note: This table only shows the top 34 path(s) that have the largest delay added for hold.
@@ -1376,7 +1376,7 @@ Info (176353): Automatically promoted node clk_50MHz~input (placed in PIN P11 (C
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
 Info (176353): Automatically promoted node segment_display:HEX_0|Mux7~0  File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/segment_display.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node clk_generator:clk_2_50|clk_2MHz  File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/clk_generator.v Line: 4
+Info (176353): Automatically promoted node clk_generator:clk_2_50|clk_2Hz  File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/clk_generator.v Line: 4
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node counter_99:digital_counter|count[2] File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/counter_99.v Line: 21
@@ -1385,7 +1385,7 @@ Info (176353): Automatically promoted node clk_generator:clk_2_50|clk_2MHz  File
         Info (176357): Destination node counter_99:digital_counter|count[5] File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/counter_99.v Line: 21
         Info (176357): Destination node counter_99:digital_counter|count[6] File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/counter_99.v Line: 21
         Info (176357): Destination node counter_99:digital_counter|count[7] File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/counter_99.v Line: 21
-        Info (176357): Destination node clk_generator:clk_2_50|clk_2MHz~0 File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/clk_generator.v Line: 4
+        Info (176357): Destination node clk_generator:clk_2_50|clk_2Hz~0 File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/clk_generator.v Line: 4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1402,7 +1402,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.21 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C7G are preliminary
 Info (334004): Delay annotation completed successfully
@@ -1416,10 +1416,10 @@ Warning (169177): 2 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V
     Info (169178): Pin clk_50MHz uses I/O standard 3.3-V LVTTL at P11 File: D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/digital_timer_top.v Line: 13
 Info (144001): Generated suppressed messages file D:/Work/College/Semester 5/Current Year/CSEN605/Workspace/digital_timer/output_files/digital_timer_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 1543 megabytes
-    Info: Processing ended: Fri Nov 03 19:20:43 2017
+    Info: Peak virtual memory: 1482 megabytes
+    Info: Processing ended: Sat Nov 04 10:39:53 2017
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+

@@ -1,5 +1,5 @@
 Assembler report for digital_timer_top
-Fri Nov 03 19:20:54 2017
+Sat Nov 04 10:40:04 2017
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 03 19:20:54 2017 ;
+; Assembler Status      ; Successful - Sat Nov 04 10:40:04 2017 ;
 ; Revision Name         ; digital_timer_top                     ;
 ; Top-level Entity Name ; digital_timer_top                     ;
 ; Family                ; MAX 10                                ;
@@ -79,14 +79,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Fri Nov 03 19:20:49 2017
+    Info: Processing started: Sat Nov 04 10:40:00 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off digital_timer -c digital_timer_top
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 750 megabytes
-    Info: Processing ended: Fri Nov 03 19:20:54 2017
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Sat Nov 04 10:40:04 2017
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

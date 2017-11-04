@@ -20,7 +20,7 @@ reset => reset.IN1
 
 
 |digital_timer_top|clk_generator:clk_2_50
-clk_2MHz <= clk_2MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_2Hz <= clk_2Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk_50MHz => counter[0].CLK
 clk_50MHz => counter[1].CLK
 clk_50MHz => counter[2].CLK
@@ -46,7 +46,7 @@ clk_50MHz => counter[21].CLK
 clk_50MHz => counter[22].CLK
 clk_50MHz => counter[23].CLK
 clk_50MHz => counter[24].CLK
-clk_50MHz => clk_2MHz~reg0.CLK
+clk_50MHz => clk_2Hz~reg0.CLK
 
 
 |digital_timer_top|counter_99:digital_counter

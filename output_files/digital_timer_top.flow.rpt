@@ -1,5 +1,5 @@
 Flow report for digital_timer_top
-Fri Nov 03 19:21:11 2017
+Sat Nov 04 10:40:26 2017
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 03 19:21:11 2017       ;
+; Flow Status                        ; Successful - Sat Nov 04 10:40:26 2017       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; digital_timer_top                           ;
 ; Top-level Entity Name              ; digital_timer_top                           ;
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/03/2017 19:20:03 ;
+; Start date & time ; 11/04/2017 10:39:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; digital_timer_top   ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 229521384339202.150972960313776 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 229521384339202.150978475508468 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -95,12 +95,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 830 MB              ; 00:00:41                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 1543 MB             ; 00:00:19                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 750 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 882 MB              ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 807 MB              ; 00:00:36                           ;
+; Fitter                    ; 00:00:16     ; 1.0                     ; 1482 MB             ; 00:00:16                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 750 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 882 MB              ; 00:00:03                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 714 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:42     ; --                      ; --                  ; 00:01:08                           ;
+; Total                     ; 00:00:44     ; --                      ; --                  ; 00:01:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
