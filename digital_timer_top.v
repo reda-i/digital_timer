@@ -5,9 +5,6 @@
 * 2- count on posedge of slow clk
 * 3- convert counter output to BCD values
 * 4- send the BCD values to segment display decoder
-* for testing purposes we will temporarely add 
-* a third segment display to make sure that
-* the hundereds never exceed 0
 */
 module digital_timer_top (seg_0,seg_1,clk_50MHz,reset);
 input clk_50MHz;
